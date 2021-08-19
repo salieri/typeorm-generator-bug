@@ -1,0 +1,23 @@
+{
+  "type": "postgres",
+
+  "host": "localhost",
+  "port": 5432,
+
+  "username": "test",
+  "password": "test",
+  "database": "test",
+
+  "synchronize": false,
+  "logger": "simple-console",
+  "maxQueryExecutionTime": 10000,
+
+  "schema": "public",
+
+  "logging": "all",
+
+  "entities": ["./lib/schemas/**/*.js"],
+  "migrations": ["./lib/migrations/**/*.js"],
+
+  "cli": { "migrationsDir": "./src/migrations" }
+}
